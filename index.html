@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- tailwind cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+
+    <!-- fontawesome cdn -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Emergency Service</title>
+</head>
+<body>
+    <header>
+        <!-- navbar -->
+        <nav class="flex items-center justify-between max-w-[1440px] mx-auto my-10">
+            <div class="flex items-center gap-2">
+                <img class="w-15 h-auto" src="assets/logo.png" alt="">
+                <h3 class="text-2xl font-extrabold text-[#006747]">Emergency <br> Service</h3>
+            </div>
+            <div class="flex items-center gap-10">
+                <div class="flex items-center justify-center gap-2 rounded-full h-[52px] w-[123px] bg-[#41ff6b1a]">
+                    <h3 id="heart-count" class="text-2xl text-black font-bold">0</h3>
+                    <img class="w-10" src="assets/heart.png" alt="">
+                </div>
+                <div class="flex items-center justify-center gap-2 rounded-full h-[52px] w-[123px] bg-[#41ff6b1a]">
+                    <h3 class="text-2xl font-bold text-black">100</h3>
+                    <img class="w-10" src="assets/coin.png" alt="">
+                </div>
+                <div class="flex items-center justify-center rounded-full h-[50px] w-[127px] bg-[#00A63E]">
+                    <h3 class="text-2xl font-medium text-white"> 2 copy</h3>
+                </div>
+            </div>
+        </nav>
+        <!-- banner -->
+        <section class="max-w-[1440px] mx-auto h-[239px] flex flex-col items-center justify-center text-center gap-2 bg-linear-to-r from-[#013223] via-[#006747] to-[#013223]">
+            <img class="w-[90px]" src="assets/logo-dark.png" alt="">
+            <h3 class="text-white text-2xl font-bold">Emergency Service Directory</h3>
+            <p class="text-white text-lg font-normal">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+        </section>
+    </header>
+
+    <main class="bg-[#41ff6b1a] max-w-[1440px] mx-auto px-[20px] py-[50px]">
+        <section class="flex gap-10">
+            <!-- card section -->
+            <div class="max-w-[1100px] grid grid-cols-3 gap-3">
+                <!-- single card -->
+                <div class="rounded-xl max-w-[350px] bg-white p-3 space-y-3   shadow-lg">
+                    <div class="flex items-center justify-between">
+                        <img class="w-[60px] bg-[#FFE3E2] rounded-2xl p-3" src="assets/emergency.png" alt="">
+                        <button id="heart-btn1"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                    <h3 class="text-lg text-black font-bold">National Emergency Number</h3>
+                    <p class=" text-[#5C5C5C]">National Emergency</p>
+                    <h3 class="text-lg text-black font-bold">999</h3>
+                    <p class="text-[#5C5C5C] bg-gray-200 max-w-[50px] rounded-full flex justify-center">All</p>
+                    <!-- two button -->
+                    <div>
+                        <button class="border w-[150px] rounded-sm border-gray-400 p-1.5"><i class="fa-solid fa-copy"></i> Copy</button>
+                        <button class="w-[150px] rounded-sm bg-[#00A63E] text-white p-1.5"><i class="fa-solid fa-phone"></i> Call</button>
+                    </div>
+                </div>
+                <!-- single card -->
+                 <div class="rounded-xl max-w-[350px] bg-white p-3 space-y-3  shadow-lg">
+                    <div class="flex items-center justify-between">
+                        <img class="w-[60px] bg-[#FFE3E2] rounded-2xl p-3" src="assets/emergency.png" alt="">
+                        <button id="heart-btn2"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                    <h3 class="text-lg text-black font-bold">National Emergency Number</h3>
+                    <p class=" text-[#5C5C5C]">National Emergency</p>
+                    <h3 class="text-lg text-black font-bold">999</h3>
+                    <p class="text-[#5C5C5C] bg-gray-200 max-w-[50px] rounded-full flex justify-center">All</p>
+                    <!-- two button -->
+                    <div>
+                        <button class="border w-[150px] rounded-sm border-gray-400 p-1.5"><i class="fa-solid fa-copy"></i> Copy</button>
+                        <button class="w-[150px] rounded-sm bg-[#00A63E] text-white p-1.5"><i class="fa-solid fa-phone"></i> Call</button>
+                    </div>
+                </div>
+                <!-- single card -->
+                <div class="rounded-xl max-w-[350px] bg-white p-3 space-y-3  shadow-lg">
+                    <div class="flex items-center justify-between">
+                        <img class="w-[60px] bg-[#FFE3E2] rounded-2xl p-3" src="assets/emergency.png" alt="">
+                        <button id="heart-btn3"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                    <h3 class="text-lg text-black font-bold">National Emergency Number</h3>
+                    <p class=" text-[#5C5C5C]">National Emergency</p>
+                    <h3 class="text-lg text-black font-bold">999</h3>
+                    <p class="text-[#5C5C5C] bg-gray-200 max-w-[50px] rounded-full flex justify-center">All</p>
+                    <!-- two button -->
+                    <div>
+                        <button class="border w-[150px] rounded-sm border-gray-400 p-1.5"><i class="fa-solid fa-copy"></i> Copy</button>
+                        <button class="w-[150px] rounded-sm bg-[#00A63E] text-white p-1.5"><i class="fa-solid fa-phone"></i> Call</button>
+                    </div>
+                </div>
+                <!-- single card -->
+                <div class="rounded-xl max-w-[350px] bg-white p-3 space-y-3  shadow-lg">
+                    <div class="flex items-center justify-between">
+                        <img class="w-[60px] bg-[#FFE3E2] rounded-2xl p-3" src="assets/emergency.png" alt="">
+                        <button id="heart-btn4"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                    <h3 class="text-lg text-black font-bold">National Emergency Number</h3>
+                    <p class=" text-[#5C5C5C]">National Emergency</p>
+                    <h3 class="text-lg text-black font-bold">999</h3>
+                    <p class="text-[#5C5C5C] bg-gray-200 max-w-[50px] rounded-full flex justify-center">All</p>
+                    <!-- two button -->
+                    <div>
+                        <button class="border w-[150px] rounded-sm border-gray-400 p-1.5"><i class="fa-solid fa-copy"></i> Copy</button>
+                        <button class="w-[150px] rounded-sm bg-[#00A63E] text-white p-1.5"><i class="fa-solid fa-phone"></i> Call</button>
+                    </div>
+                </div>
+                <!-- single card -->
+                <div class="rounded-xl max-w-[350px] bg-white p-3 space-y-3  shadow-lg">
+                    <div class="flex items-center justify-between">
+                        <img class="w-[60px] bg-[#FFE3E2] rounded-2xl p-3" src="assets/emergency.png" alt="">
+                        <button id="heart-btn5"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                    <h3 class="text-lg text-black font-bold">National Emergency Number</h3>
+                    <p class=" text-[#5C5C5C]">National Emergency</p>
+                    <h3 class="text-lg text-black font-bold">999</h3>
+                    <p class="text-[#5C5C5C] bg-gray-200 max-w-[50px] rounded-full flex justify-center">All</p>
+                    <!-- two button -->
+                    <div>
+                        <button class="border w-[150px] rounded-sm border-gray-400 p-1.5"><i class="fa-solid fa-copy"></i> Copy</button>
+                        <button class="w-[150px] rounded-sm bg-[#00A63E] text-white p-1.5"><i class="fa-solid fa-phone"></i> Call</button>
+                    </div>
+                </div>
+                <!-- single card -->
+                <div class="rounded-xl max-w-[350px] bg-white p-3 space-y-3  shadow-lg">
+                    <div class="flex items-center justify-between">
+                        <img class="w-[60px] bg-[#FFE3E2] rounded-2xl p-3" src="assets/emergency.png" alt="">
+                        <button id="heart-btn6"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                    <h3 class="text-lg text-black font-bold">National Emergency Number</h3>
+                    <p class=" text-[#5C5C5C]">National Emergency</p>
+                    <h3 class="text-lg text-black font-bold">999</h3>
+                    <p class="text-[#5C5C5C] bg-gray-200 max-w-[50px] rounded-full flex justify-center">All</p>
+                    <!-- two button -->
+                    <div>
+                        <button class="border w-[150px] rounded-sm border-gray-400 p-1.5"><i class="fa-solid fa-copy"></i> Copy</button>
+                        <button class="w-[150px] rounded-sm bg-[#00A63E] text-white p-1.5"><i class="fa-solid fa-phone"></i> Call</button>
+                    </div>
+                </div>
+            </div>
+            <!-- history section -->
+            <div class="w-[340px] rounded-xl shadow-lg bg-white p-3">
+                <!-- title of history section -->
+                <div class="flex items-center justify-between">
+                    <h3 class="text-xl font-semibold"><i class="fa-regular fa-clock"></i> Call History</h3>
+                    <button class="w-[100px] rounded-full bg-[#00A63E] text-white p-1.5"> Clear</button>
+                </div>
+                <!-- body of history section -->
+                 <div>
+
+                 </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
