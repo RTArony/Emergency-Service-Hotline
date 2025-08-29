@@ -1,3 +1,4 @@
+// heartcount function
 function heartCountIncrease(id){
     document.getElementById(id).addEventListener("click",function(){
     let heartCountContainer = parseInt(document.getElementById("heart-count").innerText)
@@ -13,6 +14,7 @@ heartCountIncrease("heart-btn4");
 heartCountIncrease("heart-btn5");
 heartCountIncrease("heart-btn6");
 
+// Call and coin decrease function 
 function callandCoinSpend(btn,name,number){
     document.getElementById(btn).addEventListener("click",function(){
     let coinCountContainer =parseInt(document.getElementById("coin-count").innerText)
@@ -30,14 +32,18 @@ function callandCoinSpend(btn,name,number){
 
         const callHistoryName= document.createElement('h3')
         callHistoryName.innerText=serviceName
-        callHistoryName.classList.add('linkHistoryName')
+        callHistoryName.classList.add('callHistoryName')
         const callHistoryNumber= document.createElement('p')
         callHistoryNumber.innerText= serviceNumber
-        callHistoryNumber.classList.add('linkHistoryNumber')
+        callHistoryNumber.classList.add('callHistoryNumber')
+        let callHistoryTime= document.createElement('p')
+        callHistoryTime.innerText= new Date().toLocaleTimeString()
+        callHistoryTime.classList.add('callHistoryTime') 
 
         const callHistoryContainer =document.getElementById("history-container")
         callHistoryContainer.appendChild(callHistoryName)
         callHistoryContainer.append(callHistoryNumber)
+        callHistoryContainer.append(callHistoryTime)
     }
 })
 }
@@ -47,3 +53,9 @@ callandCoinSpend("call-btn3","service-name3","service-number3")
 callandCoinSpend("call-btn4","service-name4","service-number4")
 callandCoinSpend("call-btn5","service-name5","service-number5")
 callandCoinSpend("call-btn6","service-name6","service-number6")
+
+// clear history function 
+document.getElementById("clear-history-btn").addEventListener("click",function(){
+    const callHistoryContainer=document.getElementById("history-container")
+    callHistoryContainer.innerHTML=``
+})
