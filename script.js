@@ -27,6 +27,17 @@ function callandCoinSpend(btn,name,number){
         alert(alertShow)
         coinCountContainer -=20;
         document.getElementById("coin-count").innerText= coinCountContainer
+
+        const callHistoryName= document.createElement('h3')
+        callHistoryName.innerText=serviceName
+        callHistoryName.classList.add('linkHistoryName')
+        const callHistoryNumber= document.createElement('p')
+        callHistoryNumber.innerText= serviceNumber
+        callHistoryNumber.classList.add('linkHistoryNumber')
+
+        const callHistoryContainer =document.getElementById("history-container")
+        callHistoryContainer.appendChild(callHistoryName)
+        callHistoryContainer.append(callHistoryNumber)
     }
 })
 }
