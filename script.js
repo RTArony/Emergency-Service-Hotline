@@ -59,3 +59,25 @@ document.getElementById("clear-history-btn").addEventListener("click",function()
     const callHistoryContainer=document.getElementById("history-container")
     callHistoryContainer.innerHTML=``
 })
+
+
+// copy button function
+function copyButtonpressed(btn,number){
+    document.getElementById(btn).addEventListener("click",function(){
+    const copiedNumber= document.getElementById(number).innerText
+    navigator.clipboard.writeText(copiedNumber);
+
+    alert("Hot-line number Copied to Clipboard");
+
+    let copyCountContainer=parseInt(document.getElementById("copy-count").innerText)
+    copyCountContainer +=1;
+    document.getElementById("copy-count").innerText = copyCountContainer
+})
+}
+
+copyButtonpressed("copy-btn","service-number")
+copyButtonpressed("copy-btn2","service-number2")
+copyButtonpressed("copy-btn3","service-number3")
+copyButtonpressed("copy-btn4","service-number4")
+copyButtonpressed("copy-btn5","service-number5")
+copyButtonpressed("copy-btn6","service-number6")
